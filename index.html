@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The portfolio of Youssef Hamada Youssef Aissa, a Computer Science student specializing in cybersecurity and software development.">
+    <title>Youssef Hamada Youssef Aissa - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="stylesheet" href="style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        slate: { 900: '#0F172A', 800: '#1E293B' },
+                        cyan: { 400: '#06B6D4' }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-900 text-white font-sans">
+
+    <header class="bg-slate-900/70 backdrop-blur-lg sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-cyan-400">YHYA</a>
+            <div class="hidden md:flex space-x-8 items-center">
+                <a href="#home" class="hover:text-cyan-400 transition-colors">Home</a>
+                <a href="#about" class="hover:text-cyan-400 transition-colors">About</a>
+                <a href="#projects" class="hover:text-cyan-400 transition-colors">Projects</a>
+                <a href="#skills" class="hover:text-cyan-400 transition-colors">Skills</a>
+                <a href="#contact" class="hover:text-cyan-400 transition-colors">Contact</a>
+            </div>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-white focus:outline-none" aria-label="Open mobile menu">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="#home" class="block py-2 px-6 text-sm hover:bg-slate-800">Home</a>
+            <a href="#about" class="block py-2 px-6 text-sm hover:bg-slate-800">About</a>
+            <a href="#projects" class="block py-2 px-6 text-sm hover:bg-slate-800">Projects</a>
+            <a href="#skills" class="block py-2 px-6 text-sm hover:bg-slate-800">Skills</a>
+            <a href="#contact" class="block py-2 px-6 text-sm hover:bg-slate-800">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="h-screen flex items-center justify-center text-center bg-cover bg-center">
+            <div class="max-w-4xl px-6">
+                <h1 class="text-5xl md:text-7xl font-extrabold text-white leading-tight">Youssef Hamada Youssef Aissa</h1>
+                <p class="mt-4 text-xl md:text-2xl text-cyan-400 font-semibold">Computer Science Student | Cybersecurity Enthusiast | Software Developer</p>
+                <p class="mt-8 text-lg text-gray-300">Motivated second-year Computer Science student with a strong foundation in complex problem-solving and hands-on software development. Proven ability to execute end-to-end projects, leveraging collaborative experience from 5 intensive STEM capstones and multiple university-level technical initiatives.</p>
+                <div class="mt-10 flex justify-center gap-4">
+                    <a href="#projects" class="bg-cyan-400 text-slate-900 font-bold py-3 px-8 rounded-full hover:bg-cyan-500 transition-all duration-300 shadow-lg shadow-cyan-400/20 hover:shadow-cyan-400/40">View My Work</a>
+                    <a href="https://github.com/youssefhamada2428-coder" target="_blank" rel="noopener noreferrer" class="bg-slate-800 text-white font-bold py-3 px-8 rounded-full hover:bg-slate-700 transition-all duration-300">Download CV</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl font-bold text-center mb-12">About & Experience</h2>
+                <div class="grid md:grid-cols-2 gap-16">
+                    <div>
+                        <h3 class="text-3xl font-bold text-cyan-400 mb-6">Education</h3>
+                        <div class="bg-slate-800 p-6 rounded-lg shadow-lg mb-6">
+                            <h4 class="font-bold text-xl">University of East London (EUE Campus)</h4>
+                            <p class="text-gray-400">BSc Computer Science | Expected Graduation: June 2028</p>
+                            <p class="text-gray-400 mt-2">Academic Standing: <span class="font-semibold text-white">Excellent</span></p>
+                        </div>
+                        <div class="bg-slate-800 p-6 rounded-lg shadow-lg">
+                            <h4 class="font-bold text-xl">Beni Suef STEM School</h4>
+                            <p class="text-gray-400">High School Diploma (STEM Focus) | Graduated: July 2024</p>
+                            <p class="text-gray-400 mt-2">Highlight: Completed 5 major capstone projects in an intensive, project-based curriculum.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-3xl font-bold text-cyan-400 mb-6">Professional Experience</h3>
+                        <div class="bg-slate-800 p-6 rounded-lg shadow-lg h-full">
+                             <h4 class="font-bold text-xl">E-Commerce Business Owner</h4>
+                             <p class="text-gray-400 mb-4">Amazon Seller Central | Present</p>
+                             <p class="text-lg">
+                                Scaled business revenue by <span class="text-cyan-400 font-bold">300%</span> (from 40,000 to 160,000) in 3 months. Directed product marketing, including high-quality photography and ad design to maximize conversion rates.
+                             </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="py-20 bg-slate-900/50">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl font-bold text-center mb-12">Projects Showcase</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-slate-800 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 flex flex-col">
+                        <img src="https://placehold.co/600x400/0F172A/06B6D4?text=E-Corp+Hack+Simulation" alt="E-Corp Hack Simulation Project Image" class="w-full h-48 object-cover">
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="text-2xl font-bold mb-2">E-Corp Hack Simulation</h3>
+                            <p class="text-gray-400 mb-4 text-sm flex-grow">Architected a virtualized pentesting lab to simulate real-world cyber attacks, exploiting a known backdoor and mapping the attack to the Cyber Kill Chain.</p>
+                            <div class="mb-4 flex flex-wrap gap-2">
+                                <span class="skill-badge">Kali Linux</span><span class="skill-badge">Metasploit</span><span class="skill-badge">Nmap</span><span class="skill-badge">Python</span>
+                            </div>
+                            <div class="flex gap-4 mt-auto">
+                                <a href="https://github.com/youssefhamada2428-coder" target="_blank" rel="noopener noreferrer" class="bg-cyan-400 text-slate-900 font-bold py-2 px-4 rounded-full hover:bg-cyan-500 transition-colors">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-slate-800 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 flex flex-col">
+                        <img src="https://placehold.co/600x400/0F172A/06B6D4?text=Ticket+Reservation+System" alt="Ticket Reservation System Project Image" class="w-full h-48 object-cover">
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="text-2xl font-bold mb-2">Ticket Reservation System</h3>
+                            <p class="text-gray-400 mb-4 text-sm flex-grow">Led development of a Java-based console app for event management, featuring an MVC architecture, role-based authentication, and advanced design patterns.</p>
+                            <div class="mb-4 flex flex-wrap gap-2">
+                                <span class="skill-badge">Java</span><span class="skill-badge">OOP</span><span class="skill-badge">MVC</span><span class="skill-badge">Design Patterns</span>
+                            </div>
+                            <div class="flex gap-4 mt-auto">
+                                <a href="https://github.com/youssefhamada2428-coder" target="_blank" rel="noopener noreferrer" class="bg-cyan-400 text-slate-900 font-bold py-2 px-4 rounded-full hover:bg-cyan-500 transition-colors">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-slate-800 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 flex flex-col">
+                        <img src="https://placehold.co/600x400/0F172A/06B6D4?text=Color+Recognition+System" alt="Color Recognition System Project Image" class="w-full h-48 object-cover">
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="text-2xl font-bold mb-2">Color Recognition System</h3>
+                            <p class="text-gray-400 mb-4 text-sm flex-grow">Developed an end-to-end solution with 95% accuracy to help color-blind individuals identify colors, using an ESP32, color sensor, and a full-stack PHP/MySQL web server.</p>
+                            <div class="mb-4 flex flex-wrap gap-2">
+                                <span class="skill-badge">PHP</span><span class="skill-badge">MySQL</span><span class="skill-badge">ESP32</span><span class="skill-badge">Embedded C/C++</span>
+                            </div>
+                            <div class="flex gap-4 mt-auto">
+                                <a href="https://github.com/youssefhamada2428-coder" target="_blank" rel="noopener noreferrer" class="bg-cyan-400 text-slate-900 font-bold py-2 px-4 rounded-full hover:bg-cyan-500 transition-colors">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl font-bold text-center mb-12">Technical Skills</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="bg-slate-800 p-6 rounded-lg shadow-lg">
+                        <h3 class="text-2xl font-bold text-cyan-400 mb-4">Programming & Scripts</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="skill-badge">Java</span><span class="skill-badge">Python</span><span class="skill-badge">C/C++ (Embedded)</span><span class="skill-badge">PHP</span><span class="skill-badge">HTML</span><span class="skill-badge">SQL</span>
+                        </div>
+                    </div>
+                    <div class="bg-slate-800 p-6 rounded-lg shadow-lg">
+                        <h3 class="text-2xl font-bold text-cyan-400 mb-4">Security & Networking</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="skill-badge">Kali Linux</span><span class="skill-badge">Metasploit</span><span class="skill-badge">Nmap</span><span class="skill-badge">Penetration Testing</span><span class="skill-badge">Host-Only Networking</span>
+                        </div>
+                    </div>
+                    <div class="bg-slate-800 p-6 rounded-lg shadow-lg">
+                        <h3 class="text-2xl font-bold text-cyan-400 mb-4">Software & Architecture</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="skill-badge">OOP</span><span class="skill-badge">MVC Architecture</span><span class="skill-badge">UML</span><span class="skill-badge">DFD</span><span class="skill-badge">ERD</span><span class="skill-badge">Odoo POS</span><span class="skill-badge">Git/GitHub</span>
+                        </div>
+                    </div>
+                    <div class="bg-slate-800 p-6 rounded-lg shadow-lg">
+                        <h3 class="text-2xl font-bold text-cyan-400 mb-4">Hardware & IoT</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="skill-badge">Arduino UNO</span><span class="skill-badge">ESP32</span><span class="skill-badge">TCS3200 Sensor</span><span class="skill-badge">IoT Sensors</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-20 bg-slate-900/50">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-4xl font-bold mb-8">Get in Touch</h2>
+                <p class="text-lg text-gray-300 mb-8 max-w-2xl mx-auto">I'm always open to discussing new projects, creative ideas, or opportunities to be part of an amazing team. Feel free to reach out.</p>
+                <a href="mailto:youssef.hamada2428@gmail.com" class="bg-cyan-400 text-slate-900 font-bold py-4 px-10 rounded-full hover:bg-cyan-500 transition-all duration-300 shadow-lg shadow-cyan-400/20 hover:shadow-cyan-400/40 text-lg">
+                    Say Hello
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-slate-800 py-6">
+        <div class="container mx-auto px-6 text-center">
+            <div class="flex justify-center space-x-6 mb-4">
+                <a href="https://github.com/youssefhamada2428-coder" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-cyan-400 transition-colors" aria-label="GitHub Profile">
+                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.165 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.031-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.03 1.595 1.03 2.688 0 3.848-2.338 4.695-4.566 4.942.359.308.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.001 10.001 0 0022 12c0-5.523-4.477-10-10-10z" clip-rule="evenodd" /></svg>
+                </a>
+                <a href="https://linkedin.com/in/youssefhamada2428" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-cyan-400 transition-colors" aria-label="LinkedIn Profile">
+                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z" /></svg>
+                </a>
+            </div>
+            <p class="text-gray-500 text-sm">&copy; 2024 Youssef Hamada Youssef Aissa. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
